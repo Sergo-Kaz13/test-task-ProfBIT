@@ -1,8 +1,8 @@
 'use strict'
 
-const form = '/backend/customer-message-form.json';
-const success = '/backend/customer-message-form-success.json';
-const error = '/backend/customer-message-form-error.json';
+const form = '../backend/customer-message-form.json';
+const success = '../backend/customer-message-form-success.json';
+const error = '../backend/customer-message-form-error.json';
 
 const btnAskAQuestion = document.querySelector('.myButton');
 btnAskAQuestion.addEventListener('click', () => {
