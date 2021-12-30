@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    padding: 15px;
+}
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+    border: none;
+    position: fixed;
+    right: 15px;
+    bottom: 25px;
+    transition: .28s;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	transform: translate(-2px, 2px);
+}
+.block-form {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(78, 77, 77, .2);
+    padding: 30px;
+}
+.window-form {
+    position: relative;
+    width: 500px;
+    border: 3px solid rgb(250, 247, 247);
+    background: rgb(204, 201, 189);
+    box-shadow: -2px 2px 15px rgb(0, 0, 0);
+    padding: 15px;
+    padding-top: 40px;
+    border-radius: 10px;
+}
+@media (max-width: 1154px) {
+  .window-form {
+    width: calc(260px + (500 - 260) * ((100vw - 320px) / (1154 - 320)));
+  }
+}
+.btn-close {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(/img/close-icon-13577.png) center center / contain no-repeat;
+    transition: .28s;
+}
+.btn-close:hover {
+    cursor: pointer;
+}
+.window-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.window-form input,
+.window-form textarea,
+.window-form select {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.window-form textarea {
+    min-height: 90px;
+    padding: 15px;
+    resize: none;
+}
+.errors-block {
+  margin-bottom: 7px;
+  color: rgb(255, 0, 0);
+}
